@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Becker</title>
+    <link rel="icon" type="image/x-icon" href="..//assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+    <link rel="stylesheet" href="..//assets/css/swap.css">
+    <link rel="stylesheet" href="..//assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="..//assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="..//assets/css/slick.css">
+    <link rel="stylesheet" href="..//assets/css/style.css">
+    <link rel="stylesheet" href="..//assets/css/media_query.css">
+</head>
+
+<body>
+    <!-- ====================================== Preloader ===================================== -->
+    <div class="wrapper">
+        <div id="loader-wrapper">
+            <div id="loader">
+                <svg viewBox="0 0 1320 300">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">Becker </text>
+                </svg>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+    <!-- ====================================== Preloader End ===================================== -->
+    <!-- ====================================== Background Animation ===================================== -->
+    <canvas id="test"></canvas>
+    <!-- ====================================== Background Animation End ===================================== -->
+    <!-- ====================================== Cursor ===================================== -->
+    <div class="cursor"></div>
+    <!-- ====================================== Cursor End ===================================== -->
+    <!-- ====================================== Dark Light Mode ===================================== -->
+    <div class="dark_toggle">
+        <div class="ul-header">
+            <a class="mode" onclick="myFunction()" title="Toggle Mode">
+                <div class="icon-container">
+                    <i id="sunIcon" class="fa-solid fa-sun fa-spin icon"></i>
+                    <i id="moonIcon" class="fa-solid fa-moon icon hidden"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ====================================== Dark Light Mode End===================================== -->
+    <header>
+        <!-- ====================================== Fix Icon Menu ===================================== -->
+        <div class="sidebar close">
+            <ul class="nav-links icetab-container" id="icetab-container">
+                <li class="icetab current-tab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/home_icon.svg" alt="home_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class=""><a class="link_name" href="javascript:void(0)">Home</a></li>
+                    </ul>
+                </li>
+                <li class="icetab menu-btn">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/about_icon.svg" alt="about_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">About Me</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/resume_icon.svg" alt="resume_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Resume</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/services_icon.svg" alt="services_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Services</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/skills_icon.svg" alt="skills_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Skills</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/portfolio_icon.svg" alt="portfolio_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Portfolio</a></li>
+                    </ul>
+                </li>
+                
+                <li class="icetab">
+                    <a class="javascript:void(0)" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/contact_icon.svg" alt="contact_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- ====================================== Fix Icon Menu End ===================================== -->
+        <!-- ======================================= Side Menu ================================== -->
+        <div class="toggle" onclick="openNav()">
+            <img class="line-menu" src="../assets/images/line-menu.png" alt="line-menu">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closebtn" onclick="closeNav()">&times;</div>
+           <!-- <img class="logo" src="../assets/images/logo.png" alt="logo"> -->
+            <ul class="sidescreen_sub icetab-container" id="icetab-container2">
+                <li class="icetab current-tab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/home_icon.svg" alt="home_icon">Home
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/about_icon.svg"
+                            alt="about_icon">About Me
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/resume_icon.svg"
+                            alt="resume_icon">Resume
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/services_icon.svg"
+                            alt="services_icon.svg">Services
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/skills_icon.svg"
+                            alt="skills_icon">Skills
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/portfolio_icon.svg"
+                            alt="portfolio_icon">Portfolio
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/contact_icon.svg"
+                            alt="contact_icon">Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- ======================================= Side Menu End ================================== -->
+    </header>
+    <div class="all_page" id="page">
+        <section class="card_section" id="card_main">
+            <div class="arnaldo_bio" id="oliva_details">
+                <div class="imgBox">
+                    <img class="arnaldo-img" src="../assets/images/arnaldo-img.png" alt="arnaldo-img">
+                </div>
+                <div class="bio_contain">
+                    <h1 class="arnaldo_becker">Arnaldo Becker</h1>
+                    <h2 class="designer font_w_font_s1 overflow-hidden"></h2>
+                    <button class="download_cv hire_me font_w_font_s" href="www.google.com" target="-_blank">
+                        <i class="ri-at-line"></i> Contate Me
+                    </button>
+                </div>
+            </div>
+            <div class="right_card_main icetab-content" id="icetab-content">
+                <!-- ======================================= Home Section ================================== -->
+                <section class="oliva-intro tabcontent tab-active" id="home">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">intro</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Ola, Me chamo Arnaldo, Desenvolvedor FullStack</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Como Desenvolvedor, minha missão é criar experiências
+                        digitais agradáveis e intuitivas. Com um vasto conhecimento em desenvolvimento front-end e um olhar atento
+                        aos detalhes, especializo-me em transformar ideias complexas em interfaces de fácil uso que cativam e envolvem os usuários.
+                    </h3>
+                    <div class="button_circle_group">
+                        <div>
+                            <button class="download_cv font_w_font_s"
+                                onClick="window.open('../assets/pdf/arnaldo_resume.pdf');">
+                                <i class="ri-download-cloud-2-line"></i>Download CV
+                            </button>
+                        </div>
+                        <div class="circular_text_main ">
+                            <a href="javascript:void(0)" class="down_arrow_main position-relative">
+                                <img class="circular_text" src="../assets/images/circular_text.png" alt="circular_text">
+                                <img class="down_arrow" src="../assets/images/down_arrow.svg" alt="down_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= About Section ================================== -->
+                <section class="oliva-intro tabcontent" id="about">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">about me</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Minha jornada</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Desde criança, sou apaixonado pelo mundo dos computadores. Aos 14 anos, comecei a trabalhar com manutenção de computadores, e aos 18 anos, descobri o fascinante mundo da programação. Desde então, venho aprimorando minhas habilidades e sempre descobrindo novas tecnologias. Atualmente, sou desenvolvedor fullstack em um conglomerado empresarial de hotéis, responsável por mais de 10 empresas. Ao longo da minha jornada, tenho trabalhado com diversas tecnologias e ferramentas, sempre buscando criar soluções digitais eficientes e inovadoras. Sou naturalmente curioso, sempre em busca de aperfeiçoar minhas habilidades e resolver problemas complexos de desenvolvimento, um passo de cada vez.
+
+                    </h3>
+                    <div class="about_counter fade_up">
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="2">2+</h3>
+                            <h3 class="experince font_w_font_s1 ">YEARS OF EXPERIENCE</h3>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Resume Section ================================== -->
+                <section class="oliva-intro tabcontent" id="resume">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">Resume</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Educação</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Dui ac erat in nec ut at viverra. Tristique
+                        morbi gravida pulvinar aenean ornare cras rhoncus volutpat a. Tempor cras convallis neque auctor
+                        ipsum cursus senectus. Bibendum nunc a fringilla vitae etiam eget volutpat felis scelerisque.
+                    </h3>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">Analise e Desenvolvimento de Sistemas</h3>
+                            <h4 class="university font_w_font_s1">Unicesumar / 2023 - Present
+                            </h4>
+                            <h5 class="cursus font_w_font_s1">Cursus ut consectetur rhoncus ut nibh. Bibendum at sit a
+                                tempor, laoreet varius et. Sed ut egestas vitae dolor nulla non Ullamcorper amet nibh.
+                            </h5>
+                        </div>
+                    </div>
+
+                    <h2 class="moswa experience_main_text font_w_font_s fade_up">Experience</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Dui ac erat in nec ut at viverra. Tristique morbi
+                        gravida pulvinar aenean ornare cras rhoncus volutpat a. Tempor cras convallis neque auctor ipsum
+                        cursus senectus. Bibendum nunc a fringilla vitae etiam eget volutpat felis scelerisque.
+                    </h3>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Assistente de Desenvolvimento</h3>
+                                    <h4 class="company font_w_font_s1">Mabu / 2024 - Present </h4>
+                                </div>
+                                <img class="company_logo" src="../assets/images/logo-mabu.png" alt="envato">
+                            </div>
+                            <h5 class="cursus font_w_font_s1">Cursus ut consectetur rhoncus ut nibh. Bibendum at sit a
+                                tempor, laoreet varius et. Sed ut egestas vitae dolor nulla non Ullamcorper amet nibh.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="education position-relative education_space">
+                    <div class="side_circle_ring fade_up">
+                        <div class="small_yellow_border">
+                            <div class="small_yellow_circle"></div>
+                        </div>
+                    </div>
+                    <div class="small_yellow_border_main fade_up">
+                        <div class="envato_group_main">
+                            <div>
+                                <h3 class="bachelor font_w_font_s1">Auxiliar de TI</h3>
+                                <h4 class="company font_w_font_s1">Mabu / 2023 - 2024 </h4>
+                            </div>
+                            <img class="company_logo" src="../assets/images/logo-mabu.png" alt="envato">
+                        </div>
+                        <h5 class="cursus font_w_font_s1">Cursus ut consectetur rhoncus ut nibh. Bibendum at sit a
+                            tempor, laoreet varius et. Sed ut egestas vitae dolor nulla non Ullamcorper amet nibh.
+                        </h5>
+                    </div>
+                </div>
+                </section>
+                <!-- ======================================= Services Section ================================== -->
+                <section class="oliva-intro tabcontent" id="services">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">my services</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Transformando Ideias em Experiências Digitais Inesquecíveis</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Como desenvolvedor, ofereço uma gama completa de serviços para transformar suas ideias em experiências digitais de alto impacto:
+                    </h3>
+                    <div class="services_box_main">
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="../assets/images/ux.png" alt="ux">
+                            <h3 class="ui_ux font_w_font_s">Ui/Ux Design</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Especializado em criar interfaces intuitivas e visualmente atraentes que proporcionam uma experiência de usuário excepcional, focando na usabilidade e na estética para garantir a satisfação dos usuários.
+                            </h4>
+                        </div>
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="../assets/images/android.png" alt="android">
+                            <h3 class="ui_ux font_w_font_s">App Development</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Desenvolvedor de aplicativos robustos e escaláveis, utilizando as tecnologias mais avançadas para oferecer soluções inovadoras que atendem às necessidades específicas do seu negócio.
+                            </h4>
+                        </div>
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="../assets/images/web.png" alt="web">
+                            <h3 class="ui_ux font_w_font_s">Web Development</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Especializado na construção de sites responsivos e de alta performance, otimizados para todos os dispositivos. Garante uma presença online sólida e eficiente para o seu negócio.
+                            </h4>
+                        </div>
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="../assets/images/marketing.png" alt="marketing">
+                            <h3 class="ui_ux font_w_font_s">Automations</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Focado em desenvolver soluções de automação personalizadas para otimizar processos empresariais, aumentando a eficiência e reduzindo custos operacionais, permitindo que você se concentre no que realmente importa.
+
+                            </h4>
+                        </div>
+
+                    </div>
+
+                </section>
+                <!-- ======================================= Skills Section ================================== -->
+                <section class="oliva-intro tabcontent" id="skill">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">my skills</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Conheça minhas habilidades</h2>
+                    <h3 class="passionate font_w_font_s1 ">Nec ligula facilisis congue sed montes odio arcu. Sed
+                        suspendisse lectus pulvinar tempor ultrices quis tellus diam sollicitudin.
+                    </h3>
+                    <h3 class="lan_skill font_w_font_s fade_up">Soft Skills</h3>
+                    <div class="skill_circle_main">
+                        <div>
+                            <div class="circlechart" data-percentage="0"></div>
+                            <h2 class="subject">English</h2>
+                        </div>
+
+                    </div>
+
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Hard Skills</h3>
+                    <div class="skill_circle_main">
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/figma.png" alt="figma">
+                                <h4 class="hard_skill_counter font_w_font_s1">00%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Figma</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/bootstrap.png" alt="bootstrap">
+                                <h4 class="hard_skill_counter font_w_font_s1">00%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Bootstrap</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/css.png" alt="css">
+                                <h4 class="hard_skill_counter font_w_font_s1">00%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">CSS</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/html.png" alt="html">
+                                <h4 class="hard_skill_counter font_w_font_s1">00%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">HTML</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/php.png" alt="html">
+                                <h4 class="hard_skill_counter font_w_font_s1">00%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">PHP</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/laravel.png" alt="html">
+                                <h4 class="hard_skill_counter font_w_font_s1">00%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">LARAVEL</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/react-js.png" alt="html">
+                                <h4 class="hard_skill_counter font_w_font_s1">00%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">REACT-JS</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/jquery.png" alt="html">
+                                <h4 class="hard_skill_counter font_w_font_s1">00%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">JQUERY</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/database.png" alt="html">
+                                <h4 class="hard_skill_counter font_w_font_s1">00%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">BANCO DE DADOS</h4>
+                        </div>
+                </section>
+                <!-- ======================================= Portfolio Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="portfolio">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">portfolio</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Eleve o nivel da sua empresa</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Conheça alguns de nossos projetos
+                    </h3>
+                    <div class="content_main">
+                        <div class="content_main1">
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/images/content_img.jpg" alt="content_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">TITLE</h3>
+                                        <p class="content-text">CONTENT</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">TITLE</h4>
+                                <p class="project_name_sub font_w_font_s1">CONTENT</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio" id="youtube">
+                                    <a href="#">
+                                        <div class="content-overlay"></div>
+                                        <img class="content-image" src="../assets/images/food_app.jpg" alt="food_app">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">TITLE</h3>
+                                            <p class="content-text">youtube video</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <h4 class="project_name font_w_font_s">TITLE</h4>
+                                <p class="project_name_sub font_w_font_s1">youtube video</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio link">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/images/pocket_fm.jpg" alt="pocket_fm">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">TITLE</h3>
+                                        <p class="content-text">sound cloud</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">TITLE</h4>
+                                <p class="project_name_sub font_w_font_s1">sound cloud</p>
+                            </div>
+                        </div>
+                        <div class="content_main2">
+                            <div class="fade_up">
+                                <div class="content_portfolio" id="vimeo">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/images/crypto_app_img.jpg"
+                                        alt="crypto_app_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">TITLE</h3>
+                                        <p class="content-text">vimeo video</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">TITLE</h4>
+                                <p class="project_name_sub font_w_font_s1">vimeo video</p>
+                            </div>
+                            <div class="">
+                                <a href="#popup1">
+                                    <div class="content_portfolio">
+                                        <div class="content-overlay"></div>
+                                        <img class="content-image" src="../assets/images/city_3Dview.jpg"
+                                            alt="city_3Dview">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">TITLE</h3>
+                                            <p class="content-text">gallery</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h4 class="project_name font_w_font_s">TITLE</h4>
+                                <p class="project_name_sub font_w_font_s1">gallery</p>
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio pop-up">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/images/bank_app.jpg" alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">TITLE</h3>
+                                        <p class="content-text">content</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">TITLE</h4>
+                                <p class="project_name_sub font_w_font_s1">content</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Portfolio Section End  ================================== -->
+
+                <!-- ======================================= Contact us Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="contact">
+                    <div class="intro_main">
+                        <h2 class="intro fade_up">contact us</h2>
+                    </div>
+                    <h2 class="moswa fade_up">Vamos trabalhar juntos!</h2>
+                    <div class="container1">
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Qual o seu Nome*</label>
+                            <input type="text" class="form__input" placeholder="" id="name" required autocomplete="off">
+                        </div>
+                        <div class="form form__2">
+                            <label for="email" class="form__label">Seu Email*</label>
+                            <input type="email" class="form__input" placeholder="" id="email" required
+                                autocomplete="off">
+                        </div>
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Seu Numero*</label>
+                            <input type="text" class="form__input" placeholder="" id="phone" required
+                                autocomplete="off">
+                        </div>
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Assunto*</label>
+                            <input type="text" class="form__input" placeholder="" id="subject" required
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="btn_message">
+                        <div class="form form__3">
+                            <label for="name" class="form__label">Descrição*</label>
+                            <input type="text" class="form__input message2" placeholder="" id="project" required>
+                        </div>
+                        <div class="send_message_form">
+                            <button class="download_cv form__btn">
+                                <i class="fa-regular fa-paper-plane material-icons"></i>Envie uma mensagem
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="moswa touch">Entre em contato!</h3>
+                        <div class="contact_number_main">
+                            <img src="../assets/images/contact.svg" alt="contact">
+                            <h4 class="contact_number"><a href="tel:+5545999242689">+55 45 9 9924-2689</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="../assets/images/gmail.svg" alt="gmail">
+                            <h4 class="contact_number"><a href="arnaldo.becker@outlook.com">arnaldo.becker@outlook.com</a></h4>
+                        </div>
+
+                    </div>
+
+                    <h5 class="copyright">© arnaldo 2024. All rights reserved by
+                        <a class="becker" href="www.linkedin.com/in/arnaldo-becker-758095249" target="blank">Arnaldo Becker.</a>
+                    </h5>
+                </section>
+                <!-- ======================================= Contact us Section End ================================== -->
+            </div>
+        </section>
+        <!-- ======================================= Social Media Right Side  ================================== -->
+        <div class="social_media_main" id="social_media_main">
+            <ul class="social_media">
+                <li><a href="https://www.linkedin.com" target="blank">LK</a></li>
+                <li><a href="https://www.instagram.com" target="blank">IG</a></li>
+                <li><a href="https://www.behance.net" target="blank">BE</a></li>
+                <li><a href="https://github.com" target="blank">GB</a></li>
+            </ul>
+        </div>
+        <!-- ======================================= Social Media Right Side End ================================== -->
+
+        <!-- ======================================= Portfolio PopUp Window  ================================== -->
+        <div class="overlay">
+            <div class="content2">
+                <div id="close">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="../assets/images/portfolio_big_img.jpg" alt="portfolio_big_img">
+                <div class="corporate_main">
+                    <div class="corporate_sub">
+                        <h3 class="project_name corp font_w_font_s">Corporate Branding</h3>
+                        <p class="project_name_sub font_w_font_s1">CONTENT</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Created By:</p>
+                        <p class="cuberto">Cuberto</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Date:</p>
+                        <p class="cuberto">20/12/2024</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Client:</p>
+                        <p class="cuberto">Rayan Patrick</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Categories:</p>
+                        <p class="cuberto">Content</p>
+                    </div>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    Ornare sagittis blandit imperdiet cursus risus. Amet proin cras mattis arcu pellentesque lorem
+                    sagittis. Mauris facilisis id est duis eget sed cras curabitur faucibus. Lectus eu eu quis amet.
+                    Ultrices morbi bibendum risus nisi sapien id ut egestas. Et fermentum fermentum faucibus sed quis in
+                    eget. Quis cursus eu in sit cras sit elementum nibh sit.
+                </p>
+                <div class="project_second">
+                    <div>
+                        <img class="project_sub_images" src="../assets/images/project_sub_images1.jpg"
+                            alt="project_sub_images1">
+                    </div>
+                    <div>
+                        <img class="project_sub_images" src="../assets/images/project_sub_images2.jpg"
+                            alt="project_sub_images2">
+                    </div>
+                </div>
+                <p class="blandit_text">Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed
+                    viverra volutpat. Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus
+                    enim nisi proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id
+                    nec amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+                </p>
+                <div class="pop-up-footer">
+                    <button class="download_cv view_project font_w_font_s"
+                        onClick="window.open('WWW.GOOGLE.COM');">
+                        <i class="ri-eye-line"></i> View Project
+                    </button>
+                    <div class="share-button share">
+                        <i class="ri-share-line share-btn"></i>
+                        <div class="social top center networks-5 ">
+                            <a class="fbtn facebook" href="https://www.facebook.com" target="_blank">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a class="fbtn instagram" href="https://www.instagram.com" target="_blank">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a class="fbtn whatsapp" href="https://wa.me/+12345678899" target="_blank">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+                            <a class="fbtn linkedin" href="https://www.linkedin.com" target="_blank">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+
+    <!-- ======================================= Portfolio gallery ================================== -->
+    <div id="popup1" class="overlay_gallery">
+        <div class="popup_gallery">
+            <h2 class="city_gallery">City 3D View Gallery</h2>
+            <a class="close" href="#">&times;</a>
+            <div id="cbwrap">
+                <div class="gallery">
+                    <img src="../assets/images/gallery_img1.png" alt="gallery_img1">
+                    <img src="../assets/images/gallery_img2.png" alt="gallery_img2">
+                    <img src="../assets/images/gallery_img3.png" alt="gallery_img3">
+                    <img src="../assets/images/gallery_img4.png" alt="gallery_img4">
+                    <img src="../assets/images/gallery_img5.png" alt="gallery_img5">
+                    <img src="../assets/images/gallery_img1.png" alt="gallery_img1">
+                    <img src="../assets/images/gallery_img4.png" alt="gallery_img4">
+                    <img src="../assets/images/gallery_img2.png" alt="gallery_img2">
+                    <img src="../assets/images/gallery_img5.png" alt="gallery_img5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/javascript/jquery.min.js"></script>
+    <script src="../assets/javascript/magnific-popup.min.js"></script>
+    <script src="../assets/javascript/progresscircle.js"></script>
+    <script src="../assets/javascript/cursor.js"></script>
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/slick.min.js"></script>
+    <script src="../assets/javascript/ring_animation/ring_bg_animation.js"></script>
+    <script src="../assets/javascript/script.js"></script>
+</body>
+
+</html>
